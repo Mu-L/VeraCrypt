@@ -25,7 +25,7 @@
 	<!-- Lang will be defined in a .wxl file which will be passed to the WIX linker 'light' -->
 	<Product 	Id="$(var.ProductGuid)"
 				Language="!(loc.Lang)" 
-				Manufacturer="IDRIX"
+				Manufacturer="AM Crypto"
 				Name="$(var.ProductName)"
 				Version="$(var.FullProductVersion)"
 				UpgradeCode="$(var.UpgradeCode)">
@@ -42,7 +42,7 @@
 					InstallerVersion="500"
 					InstallPrivileges="elevated"
 					Keywords="VeraCrypt MSI Installer"
-					Manufacturer="IDRIX"
+					Manufacturer="AM Crypto"
 					Languages="0"
 					Platform="x64"
 					Description="VeraCrypt $(var.FullProductVersion) 64-bit MSI Installer"
@@ -135,7 +135,7 @@
 		<Property Id="ARPPRODUCTICON" Value="Setup.ico" />
 		
 		<!-- URL for the link to the publishers home page or the application's home page -->
-		<Property Id="ARPURLINFOABOUT" Value="https://www.idrix.fr"/>
+		<Property Id="ARPURLINFOABOUT" Value="https://amcrypto.jp"/>
 		
 		<!-- Following properties are meant to install the Desktop and StartMenu shortcuts -->
 		<!-- They make it possible to give the user checkboxes to choose whether to install or not -->
@@ -674,20 +674,11 @@
 			<Component Id="cmp433CCCF103F2A8AF57F9FC528232C836" Guid="{D427BFF5-7DC7-4414-A920-51E2CAAAB671}">
 				<File Id="fil64A82A6BA01444F0F0AF2BFBFCB524D1" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\en\Donation_VC_BTC_Sigwit.png" Checksum="yes" DiskId="1" />
 			</Component>
-			<Component Id="cmpE5D6E9DF3EE1301C6D5A4F44362BCE96" Guid="{0811DEAF-F857-4839-A31B-C1B3A2C932FE}">
-				<File Id="fil83A3E2E3996B9CC933A606F6E4661FD5" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\en\Donation_VeraCrypt_BitcoinCash.png" Checksum="yes" DiskId="1" />
-			</Component>
 			<Component Id="cmpB7B429D414CF1DD05A4B70CE94E343F7" Guid="{04490FFA-387E-4FD7-9449-AB6C99886EA9}">
 				<File Id="fil25C86292E018E61CB762731F14261986" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\en\Donation_VeraCrypt_Bitcoin_small.png" Checksum="yes" DiskId="1" />
 			</Component>
 			<Component Id="cmp00845B9781D5633702C834BCB4EB93D1" Guid="{A41BFAC5-42BF-45DB-BFF9-703F9DBE7346}">
 				<File Id="filAD426632459DB7AB1528AC311CE28870" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\en\Donation_VeraCrypt_Ethereum.png" Checksum="yes" DiskId="1" />
-			</Component>
-			<Component Id="cmp47F92D029E335F7865F8ACB30763FED2" Guid="{A6C96C85-D0E8-442B-8C84-8705F17EE4C7}">
-				<File Id="fil155C2578FFCBDBD39679AB6AF62EEA7B" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\en\Donation_VeraCrypt_Litecoin.png" Checksum="yes" DiskId="1" />
-			</Component>
-			<Component Id="cmpF3B90B0C1F316854E9142B22783ACF19" Guid="{A369FF58-377C-47B9-A2A6-B222CA95898C}">
-				<File Id="filBE9E8FB59340806B67751E8BC2E00071" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\en\Donation_VeraCrypt_Monero.png" Checksum="yes" DiskId="1" />
 			</Component>
 			<Component Id="cmpBD37FB188B29DB82A15EBC9C1DB66F94" Guid="{20A19599-83B8-4DF7-8B42-84F20DFA760F}">
 				<File Id="fil8D7D976D180AF0CD0B43FD64BEF15E5B" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\en\EMV Smart Cards.html" Checksum="yes" DiskId="1" />
@@ -1332,20 +1323,11 @@
 			<Component Id="cmpF6A11C5F07AADC2DF98D1549024AA5D8" Guid="{C63CD654-EFD2-4C67-AF32-CD69ADF0CE0B}">
 				<File Id="fil7804A7A2C59A4FEDB9469EBCC705C5C4" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\ru\Donation_VC_BTC_Sigwit.png" Checksum="yes" DiskId="1" />
 			</Component>
-			<Component Id="cmp92387146C4EDCAC1653A2FDD573D2695" Guid="{6E26E556-D86B-405F-8772-41B57A62CF0E}">
-				<File Id="fil43B20F7F00EF4AF79D0F82FB86BDF1A3" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\ru\Donation_VeraCrypt_BitcoinCash.png" Checksum="yes" DiskId="1" />
-			</Component>
 			<Component Id="cmpAD29968DFA6888826A5718FF6533D96B" Guid="{E26BF267-9896-4A32-B3B1-52FF1771DA1B}">
 				<File Id="fil6997FE1AC19191CA5556C409A2B06A66" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\ru\Donation_VeraCrypt_Bitcoin_small.png" Checksum="yes" DiskId="1" />
 			</Component>
 			<Component Id="cmpECD5EF9F2075A8512411DC0C4A5249D0" Guid="{3225A53B-22E0-4BCA-99A0-E2C1604DDF74}">
 				<File Id="filFBCFEB2644899D7672ED7C8B4B93583C" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\ru\Donation_VeraCrypt_Ethereum.png" Checksum="yes" DiskId="1" />
-			</Component>
-			<Component Id="cmpCB8D27F16124CAAC7244A48FFA4AFB7D" Guid="{7E07BDF4-422E-4740-B2B4-D35ECE68FFFA}">
-				<File Id="fil5E96F5FACBC48E4D44AF52E7017EDE2E" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\ru\Donation_VeraCrypt_Litecoin.png" Checksum="yes" DiskId="1" />
-			</Component>
-			<Component Id="cmpC65A16FF1BC895E90BBB53B78E68DFD9" Guid="{F06D8C06-FFAD-41BA-9EB6-9B4152D1C5D0}">
-				<File Id="fil99117693F262D29831F855AE5C5BE2FB" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\ru\Donation_VeraCrypt_Monero.png" Checksum="yes" DiskId="1" />
 			</Component>
 			<Component Id="cmp87F512AEE17E1578EAAE94230A2D42F8" Guid="{39BC9692-4381-4634-928D-1A0DF36CEF23}">
 				<File Id="fil849BF471E22B7E5A8E6028B9CE71D955" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\ru\EMV Smart Cards.html" Checksum="yes" DiskId="1" />
@@ -1822,73 +1804,73 @@
 	   		<File Id="filC2E9B4258B06AA179474D575308D4130" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial.html" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp587C9D4998AE132DBC5046192C050CE8" Guid="{FFAC3E8B-0CDF-55D6-9FA5-C4EFF95D8FD9}">
-	   		<File Id="filE09774A543F1C1CC3282BFAD9F94D3A4" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_001.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filE09774A543F1C1CC3282BFAD9F94D3A4" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_001.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpD489F6A6B0C2C14213E33E7C0B967FD1" Guid="{5DFAD508-1276-34F9-F385-AC1E1537C551}">
-	   		<File Id="fil508698F142F338AA0C812804DE2650A8" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_002.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil508698F142F338AA0C812804DE2650A8" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_002.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp516900031B27AD1C04EB12399A08900D" Guid="{D0568CF2-E92A-5E18-68CF-4727D8AD7E54}">
-	   		<File Id="filA9FF0CAF6AB8FABA1D32EF9CFE9024F9" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_003.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filA9FF0CAF6AB8FABA1D32EF9CFE9024F9" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_003.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp5FA489B6EC89F50493B7FED05ACE16FD" Guid="{5853B5AA-4A70-9F5B-B485-C8E7B5CB34E1}">
-	   		<File Id="filFCAD31D93A3A195184D64B759969381C" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_004.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filFCAD31D93A3A195184D64B759969381C" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_004.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp162E62729597C4B9F19CA6A8DEF1FEC8" Guid="{E40161BF-569C-8E92-3FF0-6E4B63BB9C1F}">
-	   		<File Id="fil735AC8052C2A32D7DE210F5DA73AC917" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_005.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil735AC8052C2A32D7DE210F5DA73AC917" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_005.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp495D4091CD5BC20F1132AF6BDCA870F1" Guid="{1BE9F980-5596-7D2F-9655-24FB1E49B9E5}">
-	   		<File Id="filFB6AB842E43A6F697824965DAF1E6AF7" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_007.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filFB6AB842E43A6F697824965DAF1E6AF7" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_007.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpF3492B9A15B2B038004436E5E4A85D40" Guid="{30CC8E0A-AA40-6732-F569-A8EB57A73823}">
-	   		<File Id="fil7AFA4C610CE47BE818E8D48AB9229442" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_008.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil7AFA4C610CE47BE818E8D48AB9229442" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_008.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpA8C3FF79C3F2A8D55ED7D99415583595" Guid="{F4E33859-A203-8EFF-1F20-AEFA738B134E}">
-	   		<File Id="fil2580C05AAA6CD14FB9B453AA203583D2" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_009.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil2580C05AAA6CD14FB9B453AA203583D2" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_009.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp9B61EDB2858C5310CB3DA67B20764629" Guid="{8F67C757-A0F0-7F16-FA6D-69BD193B5CCE}">
-	   		<File Id="filC076327A0E71F7A35D23681B08E692AA" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_010.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filC076327A0E71F7A35D23681B08E692AA" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_010.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpE25D2626F09A609E15A81F390D74F7F8" Guid="{6EB5FFBB-9D2C-63FF-D5EE-9C9C1153DE85}">
-	   		<File Id="filC3968249A5BCA9BCA7FA9159DEE8BB4D" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_011.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filC3968249A5BCA9BCA7FA9159DEE8BB4D" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_011.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpEEBC4B7FED699F4CEF3F183FB8015310" Guid="{E14943E7-16E1-08C4-9ECE-D43739E9A103}">
-	   		<File Id="fil05605EAB4E6398F3E6576309A64E6BF7" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_012.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil05605EAB4E6398F3E6576309A64E6BF7" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_012.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp82139B514D57F4FF1ED73D5D1A106895" Guid="{CE38B207-3B64-B6EA-9E1B-F1250FD00488}">
-	   		<File Id="fil8111A22C538DD205158BAA3EEF669B59" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_013.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil8111A22C538DD205158BAA3EEF669B59" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_013.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp0E48358041F11A6CBB673775E98BE80B" Guid="{94C8DBD6-D228-753F-D296-FF71718AACA2}">
-	   		<File Id="fil0101526C73B4BE01DF78CB5051FE6EA2" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_014.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil0101526C73B4BE01DF78CB5051FE6EA2" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_014.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp7CA9DB1213636265A052522361B4A812" Guid="{925AB64E-8075-85D1-0831-AB4C54035656}">
-	   		<File Id="fil9EDE59C9937EEF4380420DD56307CEF3" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_015.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil9EDE59C9937EEF4380420DD56307CEF3" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_015.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpB1C7B0D0FBCE9DAD16B2FE0DBF4938E6" Guid="{CC578014-9CD3-5B94-8D8D-3438B491CBEB}">
-	   		<File Id="fil2A62555A8AA4C19C5248219A2CDAB021" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_016.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil2A62555A8AA4C19C5248219A2CDAB021" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_016.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp7E41C94457F636F1B9B2321AB04600C4" Guid="{84628200-5C77-4975-F08F-9C8954FEA394}">
-	   		<File Id="fil385D523AC3692E62D78C1377C24D4256" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_017.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil385D523AC3692E62D78C1377C24D4256" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_017.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp53F427C34D1E92950B8BE0B92E703CB2" Guid="{1F9D3C76-1473-859D-2F74-B7C960CD114C}">
-	   		<File Id="fil4A4D3E824578633E8973C69995D705A2" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_018.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil4A4D3E824578633E8973C69995D705A2" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_018.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpE11461D06B56A3F1EFC6DD4C966EF6A6" Guid="{C0CBE243-7F15-130D-754F-F2B87931D272}">
-	   		<File Id="fil660E361E7245713CB3471E4A507726DF" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_019.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil660E361E7245713CB3471E4A507726DF" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_019.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpCAF9FE338C51B34EFA332EDFD7B9D98C" Guid="{B403189F-DE26-61D4-89DE-4169C8C8AF59}">
-	   		<File Id="fil4C9A062DCFDF316BB1FB113F5F835CB4" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_020.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil4C9A062DCFDF316BB1FB113F5F835CB4" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_020.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpBFC2EAE49ED217B8DDAF52F6FA17798A" Guid="{A48CBBD1-6AB3-6F60-C5FE-40B5DF710F37}">
-	   		<File Id="fil38F807071FF093D627E23EA151DAAAF3" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_021.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil38F807071FF093D627E23EA151DAAAF3" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_021.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp7A9FB4BADB171AA2A4D20B806E9A36A5" Guid="{9434FEAF-EE7C-AA7F-638B-F995080F8EE2}">
-	   		<File Id="filC4CAC2EDE6803441E3D71F8E55B0FC15" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_022.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filC4CAC2EDE6803441E3D71F8E55B0FC15" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_022.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpB7BC8F28E3CFE9B4CDCC7089C0E847C7" Guid="{0E1727C7-DC1A-BEC1-1F55-553877451758}">
-	   		<File Id="fil5B49AEE88381CB763FE479BC3B2B55A3" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_023.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil5B49AEE88381CB763FE479BC3B2B55A3" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_023.gif" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp23583F789741E692A6345E3CDF539EEB" Guid="{49C484FF-2B88-6C74-42AD-D9B8BC4FC6D5}">
-	   		<File Id="filA3536B97E6EA07AA8E613B62DC4CF418" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_024.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filA3536B97E6EA07AA8E613B62DC4CF418" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_024.gif" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpD89EA79FA8F00AB55942651DE8B5CFAE" Guid="{360C3DFF-BBA2-2FF3-6CAF-9F305B2F4672}">
 	   		<File Id="fil1DD446F8D5CD39C2BAB04A7244DA0A74" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Beginner's Tutorial_Image_034.png" Checksum="yes" DiskId="1" />
@@ -1933,7 +1915,7 @@
 	   		<File Id="filC0DBC2F2464120362C0EB26A96D5271D" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Converting TrueCrypt volumes and partitions.html" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp80422759033E6E096ED761DC1892EC20" Guid="{344AEE62-679A-8336-8534-A94D52673BED}">
-	   		<File Id="fil0D07D2251B5E2E5C3D63CBADE1A5E3BB" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Converting TrueCrypt volumes and partitions_truecrypt_convertion.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil0D07D2251B5E2E5C3D63CBADE1A5E3BB" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Converting TrueCrypt volumes and partitions_truecrypt_convertion.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp7930D242A935F15A979675737E14A027" Guid="{483E3AB7-83C9-BDC0-68A7-F931DDFC691D}">
 	   		<File Id="filAFC95B7F7031D996AE860D4BBB8A691B" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Creating New Volumes.html" Checksum="yes" DiskId="1" />
@@ -1989,20 +1971,11 @@
 	   	<Component Id="cmpF28F852618ED66DF2C9212B758DABF6B" Guid="{3A0BC1A8-6244-4CB7-5DB4-9C4732B2AA05}">
 	   		<File Id="fil54D3FD1C09188695D082041F70F05EA7" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Donation_VC_BTC_Sigwit.png" Checksum="yes" DiskId="1" />
 	   		</Component>
-	   	<Component Id="cmpA4FCD9769B7D81923768B3E24B0A7C92" Guid="{59B36FF1-C488-25CB-7560-FCB461DC8D66}">
-	   		<File Id="fil616F76A9A734FBFFAFDFA6D9A3E8A1FE" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Donation_VeraCrypt_BitcoinCash.png" Checksum="yes" DiskId="1" />
-	   		</Component>
 	   	<Component Id="cmpE8BC881A4D5B7CBA5A2DE5901E4EF42C" Guid="{3E4AA606-9B58-51F1-23B8-918497AA06AB}">
 	   		<File Id="filF0D856669CA1BCB812A566B72937FBDF" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Donation_VeraCrypt_Bitcoin_small.png" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp4302138E45008754A46ABD328E20A08F" Guid="{FCA67600-DA67-A7CE-5F56-511BB4C4110E}">
 	   		<File Id="fil00F9A3A920E8D7C3007B0348FD7E69DA" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Donation_VeraCrypt_Ethereum.png" Checksum="yes" DiskId="1" />
-	   		</Component>
-	   	<Component Id="cmp1BE246950E8F804A34B66DF069F14BEB" Guid="{2871C877-842C-22EB-0B3A-F3D2D40FAA00}">
-	   		<File Id="fil3B2CB16D7096F221B3C01C940866D924" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Donation_VeraCrypt_Litecoin.png" Checksum="yes" DiskId="1" />
-	   		</Component>
-	   	<Component Id="cmp3A6C726ADF969AA952A38A9F7E181E31" Guid="{1D33088B-9552-4D43-14DE-1493EB8BCFE8}">
-	   		<File Id="fil59EA3D083D116F0389B2A3B50CB279CD" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Donation_VeraCrypt_Monero.png" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpC3811D039107BE4BAD367CB5635DA5C9" Guid="{42C0CD0A-B128-63A4-621C-8106E608092E}">
 	   		<File Id="fil74CEDD6AAA7DF81484E057AC758D6C4B" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\EMV Smart Cards.html" Checksum="yes" DiskId="1" />
@@ -2113,7 +2086,7 @@
 	   		<File Id="fil1FEA4E30AB10078A329EA163A7FFE7EA" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Keyfiles in VeraCrypt.html" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp536D5016E985775CACBEE78964CDB44D" Guid="{E1D26A2E-DAED-2904-B7F4-57793B843BC2}">
-	   		<File Id="fil3D3AF2D90520D369FC2A87DF6E95C308" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Keyfiles in VeraCrypt_Image_040.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil3D3AF2D90520D369FC2A87DF6E95C308" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Keyfiles in VeraCrypt_Image_040.gif" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp34B70BB362A4A65AF541E008135AFD87" Guid="{E415DE49-AA92-06F2-C084-8B811986F370}">
 	   		<File Id="filC02290D06EA9DBBC9CC2BDC140C9F49F" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Keyfiles.html" Checksum="yes" DiskId="1" />
@@ -2218,19 +2191,19 @@
 	   		<File Id="filBE86A4BBCA7C93EEAFC38FEA2FE245CB" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes.html" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpAF26DA8949D1628B2B837912EE95C36F" Guid="{0829AFE8-A321-FECE-0752-3208F54D9AB9}">
-	   		<File Id="filDA0308B8C3D13E84FCB5577F43F9F76F" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_027.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filDA0308B8C3D13E84FCB5577F43F9F76F" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_027.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpA307F1713B2860F580CF28AB50AECEF1" Guid="{33429825-AC5A-612A-96AE-E9B900F5714D}">
-	   		<File Id="fil2B8A56FDBCA48762406C80764BF04831" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_028.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil2B8A56FDBCA48762406C80764BF04831" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_028.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpEB0229715E97538DD2B9B2963FE290A8" Guid="{2915E5ED-6DDE-8F75-E244-D0B2AD28F2F6}">
-	   		<File Id="filFF76A4DE81785474B956C8D8F001A0FC" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_029.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filFF76A4DE81785474B956C8D8F001A0FC" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_029.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmpFD4F2038EE1D2687333B746EA8EB3686" Guid="{754469A6-5209-6E88-41CE-1B7D47867061}">
-	   		<File Id="filE77569EF4FAD159BC128754C7D3AF9C3" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_030.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filE77569EF4FAD159BC128754C7D3AF9C3" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_030.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp9980F78A9836781CF28C958C8EA3E06E" Guid="{55C6B111-849F-C184-F6FD-C3EF1E6843C0}">
-	   		<File Id="filC2DEA72AAB1725437BF659E7030A0364" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_031.png" Checksum="yes" DiskId="1" />
+	   		<File Id="filC2DEA72AAB1725437BF659E7030A0364" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Protection of Hidden Volumes_Image_031.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp3928F819C46474D83B877B4703D02C7B" Guid="{DD88E90F-CAC7-9989-2D62-22AF85239445}">
 	   		<File Id="filE8FE4E4CE3A3B134B78479C6E762CA0E" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\Random Number Generator.html" Checksum="yes" DiskId="1" />
@@ -2311,7 +2284,7 @@
 	   		<File Id="filA6B542F3122261B7F569A9C8B1B08B48" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\TrueCrypt Support.html" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp193847FD355DA26F9000564CD2F6C8B2" Guid="{7842B565-0E9A-7105-0472-18C86076DF29}">
-	   		<File Id="fil875F846CE0306CE3560F9E9E9BEADCEB" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\TrueCrypt Support_truecrypt_mode_gui.png" Checksum="yes" DiskId="1" />
+	   		<File Id="fil875F846CE0306CE3560F9E9E9BEADCEB" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\TrueCrypt Support_truecrypt_mode_gui.jpg" Checksum="yes" DiskId="1" />
 	   		</Component>
 	   	<Component Id="cmp1AE1C7879BF2BF75B2D726C0149D8A4D" Guid="{B7C53F87-AB9B-2239-A7B8-51CA961EED2A}">
 	   		<File Id="fil2DA89425317F28F2BAD83D10BB0B3EAB" KeyPath="yes" Source="$(sys.CURRENTDIR)\docs\html\zh-cn\twitter_veracrypt.PNG" Checksum="yes" DiskId="1" />
@@ -2530,7 +2503,7 @@
 				<Condition>INSTALLSTARTMENUSHORTCUT</Condition>
 				<util:InternetShortcut 	Id="VCWebsiteStartMenuShortcut"
 										Name="VeraCrypt Website"
-										Target="https://www.veracrypt.fr"
+										Target="https://veracrypt.jp"
 										Type="url"
 										IconFile="VeraCrypt.ico">
 				</util:InternetShortcut>
@@ -2564,7 +2537,7 @@
 				<!-- MSI already removes all values and subkeys that it creates : no need to set Action="createAndRemoveOnUninstall" -->
 				<RegistryKey 		Root="HKLM" Key="SOFTWARE\Classes\VeraCryptVolume" >
 					<RegistryValue 	Type="string" Value="VeraCrypt Volume" KeyPath="yes" />
-					<RegistryValue 	Type="string" Name="AppUserModelID" Value="IDRIX.VeraCrypt" KeyPath="no" />
+					<RegistryValue 	Type="string" Name="AppUserModelID" Value="AMCrypto.VeraCrypt" KeyPath="no" />
 				</RegistryKey>
 			</Component>
 		  
@@ -2772,11 +2745,8 @@
 			<ComponentRef Id="cmp3FC9C0126A2074CAABCF73197358F824" />
 			<ComponentRef Id="cmp1830E220882FBA276350032258B478AA" />
 			<ComponentRef Id="cmp433CCCF103F2A8AF57F9FC528232C836" />
-			<ComponentRef Id="cmpE5D6E9DF3EE1301C6D5A4F44362BCE96" />
 			<ComponentRef Id="cmpB7B429D414CF1DD05A4B70CE94E343F7" />
 			<ComponentRef Id="cmp00845B9781D5633702C834BCB4EB93D1" />
-			<ComponentRef Id="cmp47F92D029E335F7865F8ACB30763FED2" />
-			<ComponentRef Id="cmpF3B90B0C1F316854E9142B22783ACF19" />
 			<ComponentRef Id="cmpBD37FB188B29DB82A15EBC9C1DB66F94" />
 			<ComponentRef Id="cmp2EC17F48BC15C5405D2DB40FC6E01745" />
 			<ComponentRef Id="cmpE00F8980768E14DF59474B5CB3D84041" />
@@ -2993,11 +2963,8 @@
 			<ComponentRef Id="cmp1BCCBDD405E75313F3B3CE6EE8DA86B5" />
 			<ComponentRef Id="cmp3E991C4739DF1DE5475ECE135EE98D0E" />
 			<ComponentRef Id="cmpF6A11C5F07AADC2DF98D1549024AA5D8" />
-			<ComponentRef Id="cmp92387146C4EDCAC1653A2FDD573D2695" />
 			<ComponentRef Id="cmpAD29968DFA6888826A5718FF6533D96B" />
 			<ComponentRef Id="cmpECD5EF9F2075A8512411DC0C4A5249D0" />
-			<ComponentRef Id="cmpCB8D27F16124CAAC7244A48FFA4AFB7D" />
-			<ComponentRef Id="cmpC65A16FF1BC895E90BBB53B78E68DFD9" />
 			<ComponentRef Id="cmp87F512AEE17E1578EAAE94230A2D42F8" />
 			<ComponentRef Id="cmp97920FB49AE81562FA7ABFFA9A5DE439" />
 			<ComponentRef Id="cmpC57C3FF497FC91DB80B6398E7FEE7A64" />
@@ -3214,11 +3181,8 @@
 			<ComponentRef Id="cmpE802BC31B59EDA006E911FEE28AA5BE8" />
 			<ComponentRef Id="cmp7ED6C44547957CF7F3C80B76890FB67F" />
 			<ComponentRef Id="cmpF28F852618ED66DF2C9212B758DABF6B" />
-			<ComponentRef Id="cmpA4FCD9769B7D81923768B3E24B0A7C92" />
 			<ComponentRef Id="cmpE8BC881A4D5B7CBA5A2DE5901E4EF42C" />
 			<ComponentRef Id="cmp4302138E45008754A46ABD328E20A08F" />
-			<ComponentRef Id="cmp1BE246950E8F804A34B66DF069F14BEB" />
-			<ComponentRef Id="cmp3A6C726ADF969AA952A38A9F7E181E31" />
 			<ComponentRef Id="cmpC3811D039107BE4BAD367CB5635DA5C9" />
 			<ComponentRef Id="cmpC7B0E73093D6DD3652DD6375A7F41AEF" />
 			<ComponentRef Id="cmp61AD43A4F7BB9671DF457940980B31F2" />

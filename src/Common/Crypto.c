@@ -6,7 +6,7 @@
  Encryption for the Masses 2.02a, which is Copyright (c) 1998-2000 Paul Le Roux
  and which is governed by the 'License Agreement for Encryption for the Masses' 
  Modifications and additions to the original source code (contained in this file) 
- and all other portions of this file are Copyright (c) 2013-2025 IDRIX
+ and all other portions of this file are Copyright (c) 2013-2025 AM Crypto
  and are governed by the Apache License 2.0 the full text of which is
  contained in the file License.txt included in VeraCrypt binary and source
  code distribution packages. */
@@ -98,13 +98,13 @@ static EncryptionAlgorithm EncryptionAlgorithms[] =
 	{ { SERPENT, TWOFISH,		0 }, { XTS, 0 },	1, 1 },
 	{ { KUZNYECHIK, CAMELLIA,		0 }, { XTS, 0 },	0, 1 },
 	{ { TWOFISH, KUZNYECHIK,		0 }, { XTS, 0 },	0, 1 },
-	{ { SM4, KUZNYECHIK,			0 }, { XTS, 0 },	0, 1 },
-	{ { SM4, SERPENT,				0 }, { XTS, 0 },	0, 1 },
+	{ { KUZNYECHIK,	SM4,			0 }, { XTS, 0 },	0, 1 },
+	{ { SERPENT, SM4,				0 }, { XTS, 0 },	0, 1 },
 	{ { TWOFISH, SM4,			0 }, { XTS, 0 },	0, 1 },
 	{ { SERPENT, CAMELLIA,		0 }, { XTS, 0 },	0, 1 },
 	{ { AES, KUZNYECHIK,		0 }, { XTS, 0 },	0, 1 },
 	{ { CAMELLIA, SERPENT, KUZNYECHIK,	0 }, { XTS, 0 },	0, 1 },
-	{ { SM4, SERPENT, TWOFISH,	0 }, { XTS, 0 },	0, 1 },
+	{ { SERPENT, TWOFISH, SM4,	0 }, { XTS, 0 },	0, 1 },
 #endif
 	{ { 0,							0 }, { 0,    0},	0, 0 }		// Must be all-zero
 

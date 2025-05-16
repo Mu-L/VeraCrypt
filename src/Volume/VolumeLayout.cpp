@@ -4,7 +4,7 @@
  by the TrueCrypt License 3.0.
 
  Modifications and additions to the original source code (contained in this file)
- and all other portions of this file are Copyright (c) 2013-2025 IDRIX
+ and all other portions of this file are Copyright (c) 2013-2025 AM Crypto
  and are governed by the Apache License 2.0 the full text of which is
  contained in the file License.txt included in VeraCrypt binary and source
  code distribution packages.
@@ -120,10 +120,10 @@ namespace VeraCrypt
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SerpentAES ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SerpentTwofishAES ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new TwofishSerpent ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new KuznyechikSM4 ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SerpentSM4 ()));
+		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4Kuznyechik ()));
+		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4Serpent ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4Twofish ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new TwofishSerpentSM4 ()));
+		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4TwofishSerpent ()));
 		SupportedEncryptionModes.push_back (shared_ptr <EncryptionMode> (new EncryptionModeXTS ()));
         #else
 		SupportedEncryptionModes.push_back (shared_ptr <EncryptionMode> (new EncryptionModeWolfCryptXTS ()));
@@ -174,10 +174,10 @@ namespace VeraCrypt
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SerpentAES ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SerpentTwofishAES ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new TwofishSerpent ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new KuznyechikSM4 ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SerpentSM4 ()));
+		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4Kuznyechik ()));
+		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4Serpent ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4Twofish ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new TwofishSerpentSM4 ()));
+		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4TwofishSerpent ()));
 
 		SupportedEncryptionModes.push_back (shared_ptr <EncryptionMode> (new EncryptionModeXTS ()));
         #else
@@ -224,7 +224,6 @@ namespace VeraCrypt
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new Twofish ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new Camellia ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new Kuznyechik ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4 ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new AESTwofish ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new AESTwofishSerpent ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new CamelliaKuznyechik ()));
@@ -235,10 +234,6 @@ namespace VeraCrypt
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SerpentAES ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SerpentTwofishAES ()));
 		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new TwofishSerpent ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new KuznyechikSM4 ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SerpentSM4 ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new SM4Twofish ()));
-		SupportedEncryptionAlgorithms.push_back (shared_ptr <EncryptionAlgorithm> (new TwofishSerpentSM4 ()));
 
                 SupportedEncryptionModes.push_back (shared_ptr <EncryptionMode> (new EncryptionModeXTS ()));
         #else
