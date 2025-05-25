@@ -4,7 +4,7 @@
 # by the TrueCrypt License 3.0.
 #
 # Modifications and additions to the original source code (contained in this file)
-# and all other portions of this file are Copyright (c) 2013-2017 IDRIX
+# and all other portions of this file are Copyright (c) 2013-2017 AM Crypto
 # and are governed by the Apache License 2.0 the full text of which is
 # contained in the file License.txt included in VeraCrypt binary and source
 # code distribution packages.
@@ -96,11 +96,6 @@ else
 	OBJS += ../Crypto/blake2s_SSE41.o
 	OBJS += ../Crypto/blake2s_SSSE3.o
 endif
-ifeq "$(GCC_GTEQ_440)" "1"
-	OBJAESNI += ../Crypto/sm4-impl-aesni.oaesni
-else
-	OBJS += ../Crypto/sm4-impl-aesni.o
-endif
 ifeq "$(GCC_GTEQ_500)" "1"
 	OBJSHANI += ../Crypto/Sha2Intel.oshani
 else
@@ -124,7 +119,6 @@ OBJS += ../Crypto/Camellia.o
 OBJS += ../Crypto/Streebog.o
 OBJS += ../Crypto/kuznyechik.o
 OBJS += ../Crypto/kuznyechik_simd.o
-OBJS += ../Crypto/sm4.o
 OBJS += ../Common/Pkcs5.o
 endif
 

@@ -4,7 +4,7 @@
  by the TrueCrypt License 3.0.
 
  Modifications and additions to the original source code (contained in this file)
- and all other portions of this file are Copyright (c) 2013-2025 IDRIX
+ and all other portions of this file are Copyright (c) 2013-2025 AM Crypto
  and are governed by the Apache License 2.0 the full text of which is
  contained in the file License.txt included in VeraCrypt binary and source
  code distribution packages.
@@ -17,7 +17,6 @@
 #include "Crypto/Twofish.h"
 #include "Crypto/Camellia.h"
 #include "Crypto/kuznyechik.h"
-#include "Crypto/sm4.h"
 
 #ifdef TC_AES_HW_CPU
 #	include "Crypto/Aes_hw_cpu.h"
@@ -100,7 +99,6 @@ namespace VeraCrypt
 		l.push_back (shared_ptr <Cipher> (new CipherTwofish ()));
 		l.push_back (shared_ptr <Cipher> (new CipherCamellia ()));
 		l.push_back (shared_ptr <Cipher> (new CipherKuznyechik ()));
-		l.push_back (shared_ptr <Cipher> (new CipherSM4 ()));
         #endif
 		return l;
 	}
@@ -520,72 +518,6 @@ namespace VeraCrypt
 		return false;
 #endif
 	}
-
-	// SM4
-	void CipherSM4::Decrypt (uint8 *data) const
-	{
-		sm4_decrypt_block (data, data, (sm4_kds *) ScheduledKey.Ptr());
-	}
-
-	void CipherSM4::Encrypt (uint8 *data) const
-	{
-		sm4_encrypt_block (data, data, (sm4_kds *) ScheduledKey.Ptr());
-	}
-
-	size_t CipherSM4::GetScheduledKeySize () const
-	{
-		return SM4_KS;
-	}
-
-	void CipherSM4::SetCipherKey (const uint8 *key)
-	{
-		sm4_set_key (key, (sm4_kds *) ScheduledKey.Ptr());
-	}
-	void CipherSM4::EncryptBlocks (uint8 *data, size_t blockCount) const
-	{
-		if (!Initialized)
-			throw NotInitialized (SRC_POS);
-
-		if ((blockCount >= 4)
-			&& IsHwSupportAvailable())
-		{
-			sm4_encrypt_blocks (data, data, blockCount, (sm4_kds *) ScheduledKey.Ptr());
-		}
-		else
-			Cipher::EncryptBlocks (data, blockCount);
-	}
-	
-	void CipherSM4::DecryptBlocks (uint8 *data, size_t blockCount) const
-	{
-		if (!Initialized)
-			throw NotInitialized (SRC_POS);
-
-		if ((blockCount >= 4)
-			&& IsHwSupportAvailable())
-		{
-			sm4_decrypt_blocks (data, data, blockCount, (sm4_kds *) ScheduledKey.Ptr());
-		}
-		else
-			Cipher::DecryptBlocks (data, blockCount);
-	}
-	
-	bool CipherSM4::IsHwSupportAvailable () const
-	{
-#if CRYPTOPP_BOOL_X64 || CRYPTOPP_BOOL_X86 || CRYPTOPP_BOOL_X32
-		static bool state = false;
-		static bool stateValid = false;
-
-		if (!stateValid)
-		{
-            state = HasSSE41() && HasAESNI();
-			stateValid = true;
-		}
-		return state;
-#else
-		return false;
-#endif
-	}
-
 
     #endif	
         bool Cipher::HwSupportEnabled = true;

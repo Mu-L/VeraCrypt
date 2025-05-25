@@ -4,7 +4,7 @@
  by the TrueCrypt License 3.0.
 
  Modifications and additions to the original source code (contained in this file)
- and all other portions of this file are Copyright (c) 2013-2025 IDRIX
+ and all other portions of this file are Copyright (c) 2013-2025 AM Crypto
  and are governed by the Apache License 2.0 the full text of which is
  contained in the file License.txt included in VeraCrypt binary and source
  code distribution packages.
@@ -148,7 +148,6 @@ namespace VeraCrypt
 	TC_CIPHER (Twofish, 16, 32);
 	TC_CIPHER (Camellia, 16, 32);
 	TC_CIPHER (Kuznyechik, 16, 32);
-	TC_CIPHER (SM4, 16, 16);
 
 #undef TC_CIPHER_ADD_METHODS
 #define TC_CIPHER_ADD_METHODS

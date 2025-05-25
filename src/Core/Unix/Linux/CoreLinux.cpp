@@ -4,7 +4,7 @@
  by the TrueCrypt License 3.0.
 
  Modifications and additions to the original source code (contained in this file)
- and all other portions of this file are Copyright (c) 2013-2025 IDRIX
+ and all other portions of this file are Copyright (c) 2013-2025 AM Crypto
  and are governed by the Apache License 2.0 the full text of which is
  contained in the file License.txt included in VeraCrypt binary and source
  code distribution packages.
@@ -312,14 +312,9 @@ namespace VeraCrypt
                         typeid (EncryptionModeXTS));
             #endif 
                 bool algoNotSupported = (typeid (*volume->GetEncryptionAlgorithm()) == typeid (Kuznyechik))
-			|| (typeid (*volume->GetEncryptionAlgorithm()) == typeid (SM4))
 			|| (typeid (*volume->GetEncryptionAlgorithm()) == typeid (CamelliaKuznyechik))
 			|| (typeid (*volume->GetEncryptionAlgorithm()) == typeid (KuznyechikTwofish))
 			|| (typeid (*volume->GetEncryptionAlgorithm()) == typeid (KuznyechikAES))
-			|| (typeid (*volume->GetEncryptionAlgorithm()) == typeid (KuznyechikSM4))
-			|| (typeid (*volume->GetEncryptionAlgorithm()) == typeid (SerpentSM4))
-			|| (typeid (*volume->GetEncryptionAlgorithm()) == typeid (SM4Twofish))
-			|| (typeid (*volume->GetEncryptionAlgorithm()) == typeid (TwofishSerpentSM4))
 			|| (typeid (*volume->GetEncryptionAlgorithm()) == typeid (KuznyechikSerpentCamellia));
 
 		if (options.NoKernelCrypto

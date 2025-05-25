@@ -4,7 +4,7 @@
  by the TrueCrypt License 3.0.
 
  Modifications and additions to the original source code (contained in this file)
- and all other portions of this file are Copyright (c) 2013-2025 IDRIX
+ and all other portions of this file are Copyright (c) 2013-2025 AM Crypto
  and are governed by the Apache License 2.0 the full text of which is
  contained in the file License.txt included in VeraCrypt binary and source
  code distribution packages.
@@ -100,8 +100,6 @@ namespace VeraCrypt
 				EncryptionAlgorithmStaticText->SetLabel (LangString["CAMELLIA_HELP"]);
 			else if (typeid (*ea) == typeid (Kuznyechik))
 				EncryptionAlgorithmStaticText->SetLabel (LangString["KUZNYECHIK_HELP"]);
-			else if (typeid (*ea) == typeid (SM4))
-				EncryptionAlgorithmStaticText->SetLabel (LangString["SM4_HELP"]);
 			else
 				EncryptionAlgorithmStaticText->SetLabel (L"");
 		}

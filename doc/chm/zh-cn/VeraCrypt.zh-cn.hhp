@@ -2,13 +2,13 @@
 Compatibility=1.1 or later
 Compiled file=VeraCrypt User Guide.zh-cn.chm
 Contents file=VeraCrypt.zh-cn.hhc
-Default Font=微软雅黑,9,0
+Default Font=脦垄脠铆脩脜潞脷,9,0
 Default topic=Documentation.html
 Display compile progress=No
 Full-text search=Yes
 Index file=VeraCrypt.zh-cn.hhk
-Language=0x804 中文(简体，中国)
-Title=VeraCrypt用户指南
+Language=0x804 脰脨脦脛(录貌脤氓拢卢脰脨鹿煤)
+Title=VeraCrypt脫脙禄搂脰赂脛脧
 
 
 [FILES]
@@ -69,18 +69,6 @@ Defragmenting.html
 Digital Signatures.html
 Disclaimers.html
 Documentation.html
-Donation.html
-Donation_donate.gif
-Donation_donate_CHF.gif
-Donation_donate_Dollars.gif
-Donation_donate_Euros.gif
-Donation_donate_GBP.gif
-Donation_donate_PLN.gif
-Donation_donate_YEN.gif
-Donation_VeraCrypt_Bitcoin_small.png
-Donation_VeraCrypt_BitcoinCash.png
-Donation_VeraCrypt_Litecoin.png
-Donation_VeraCrypt_Monero.png
 Encryption Algorithms.html
 Encryption Scheme.html
 FAQ.html
@@ -114,6 +102,7 @@ liberapay_donate.svg
 LTC_Logo_30x30.png
 Main Program Window.html
 Malware.html
+mastodon_veracrypt.PNG
 Memory Dump Files.html
 Miscellaneous.html
 Modes of Operation.html
@@ -156,7 +145,6 @@ Security Tokens & Smart Cards.html
 Serpent.html
 SHA-256.html
 SHA-512.html
-SM4.html
 Sharing over Network.html
 Source Code.html
 Standard Compliance.html
